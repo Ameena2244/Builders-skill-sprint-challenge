@@ -1,0 +1,55 @@
+# ============================================================
+# Core Strands SDK - Required for ALL challenges
+# ============================================================
+strands-agents>=1.40.0
+
+# ============================================================
+# Challenge 1: First Agent (Ollama - Local)
+# ============================================================
+ollama>=0.6.0
+
+# ============================================================
+# Challenge 2: Tools (Bedrock - Nova Pro)
+# ============================================================
+strands-agents-tools>=0.5.0
+requests>=2.32.0
+
+# ============================================================
+# Challenge 3: Memory (Bedrock - Nova Pro)
+# ============================================================
+mem0ai>=0.1.0
+faiss-cpu>=1.13.0
+numpy>=1.24.0
+
+# ============================================================
+# Challenge 4: Full Agent (Bedrock - Nova Pro)
+# All dependencies from Challenges 2 & 3
+# ============================================================
+
+# ============================================================
+# Challenge 5: Innovate - MCP Agent (Bedrock - Nova Pro)
+# ============================================================
+# MCP (Model Context Protocol) support
+mcp>=1.0.0
+
+# AWS Documentation MCP Server (example implementation)
+# Install with: pip install awslabs.aws-documentation-mcp-server
+# Note: Uncomment the line below if you want to install it automatically
+# awslabs.aws-documentation-mcp-server
+
+# ============================================================
+# AWS SDK (Required for Challenges 2-5 using Bedrock)
+# ============================================================
+boto3>=1.26.0
+botocore>=1.29.0
+
+# ============================================================
+# Additional Dependencies (automatically installed)
+# ============================================================
+# These are installed automatically as dependencies:
+# - pydantic (data validation)
+# - httpx (HTTP client)
+# - python-dateutil (date utilities)
+# - numpy (for faiss-cpu)
+# - pyyaml (YAML parsing)
+# - typing-extensions (type hints)
